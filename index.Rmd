@@ -5,15 +5,17 @@ output:
     theme: united
 ---
 
-<img src="Our_World_in_Data_logo.png" style='width: 100px; position:absolute; top:0; right:0; padding:10px;'/>
+<img src="Our_World_in_Data_logo.png" style="width: 100px; position:absolute; top:0; right:0; padding:10px;"/>
 
 <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+
+```{=html}
 <style>
 h1 {
     font-family: Playfair Display, Georgia, Times New Roman, "Liberation Serif", serif;
 }
 </style>
-
+```
 ```{r include = F}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
@@ -31,7 +33,7 @@ cantril <-
 
 “Please imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. The top of the ladder represents the best possible life for you and the bottom of the ladder represents the worst possible life for you. On which step of the ladder would you say you personally feel you stand at this time?”
 
-# {.tabset}
+#  {.tabset}
 
 ## 🔢 Table
 
@@ -62,7 +64,6 @@ cantril %>%
   ) %>% 
   colorbar(title = NULL)
 ```
-
 
 ## 📈 Chart
 
@@ -120,6 +121,7 @@ bscols(
 )
 ```
 
+```{=html}
 <script>
 function filter_default() {
   var default_countries = ["Norway", "Australia", "Germany", "Bolivia", "Colombia", "Bhutan"]; // Set default countries here
@@ -127,13 +129,9 @@ function filter_default() {
 }
 window.onload = filter_default;
 </script>
-
-
-# {.unlisted}
+```
+#  {.unlisted}
 
 Data source: World Happiness Report
 
-[OurWorldInData.org/happiness-and-life-satisfaction](https://ourworldindata.org/grapher/happiness-cantril-ladder) | CC BY
-
-
-
+[OurWorldInData.org/happiness-and-life-satisfaction](https://ourworldindata.org/grapher/happiness-cantril-ladder) \| CC BY
